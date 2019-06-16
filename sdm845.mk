@@ -91,7 +91,10 @@ PRODUCT_PACKAGES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    power.qcom:64
+    android.hardware.power@1.3-service.dipper-libperfmgr
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/powerhint.json:system/etc/powerhint.json
 
 # QTI
 PRODUCT_COPY_FILES += \

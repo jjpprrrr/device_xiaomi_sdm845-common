@@ -1,0 +1,46 @@
+type hal_power_dipper, coredomain, domain;
+
+# Allow a base set of permissions required for a domain to offer a
+# HAL implementation of the specified type over HwBinder.
+typeattribute hal_power_dipper halserverdomain;
+typeattribute hal_power_dipper hal_power_server;
+
+# HwBinder IPC from client to server, and callbacks
+binder_call(hal_power_client, hal_power_server)
+binder_call(hal_power_server, hal_power_client)
+
+add_hwservice(hal_power_server, hal_power_hwservice)
+allow hal_power_client hal_power_hwservice:hwservice_manager find;
+
+type hal_power_dipper_exec, exec_type, file_type;
+init_daemon_domain(hal_power_dipper)
+
+allow hal_power_dipper input_device:dir search;
+allow hal_power_dipper input_device:chr_file rw_file_perms;
+    
+allow hal_power_dipper sysfs_graphics:dir search;
+allow hal_power_dipper sysfs_graphics:file r_file_perms;
+
+allow hal_power_dipper sysfs_rpm:file r_file_perms;
+allow hal_power_dipper sysfs_system_sleep_stats:file r_file_perms;
+
+allow hal_power_dipper debugfs_wlan:dir r_dir_perms;
+allow hal_power_dipper debugfs_wlan:file r_file_perms;
+
+# To do powerhint on nodes defined in powerhint.json
+allow hal_power_dipper sysfs_devfreq:dir search;
+allow hal_power_dipper sysfs_devfreq:file rw_file_perms;
+allow hal_power_dipper sysfs_kgsl:dir search;
+allow hal_power_dipper sysfs_kgsl:lnk_file r_file_perms;
+allow hal_power_dipper sysfs_kgsl:file rw_file_perms;
+allow hal_power_dipper sysfs_msm_subsys:dir search;
+allow hal_power_dipper sysfs_msm_subsys:file rw_file_perms;
+allow hal_power_dipper sysfs_devices_system_cpu:file rw_file_perms;
+allow hal_power_dipper device_latency:chr_file rw_file_perms;
+allow hal_power_dipper cgroup:dir search;
+allow hal_power_dipper cgroup:file rw_file_perms;
+allow hal_power_dipper debugfs_sched_features:file rw_file_perms;
+allow hal_power_dipper proc_sysctl_schedboost:file rw_file_perms;
+
+# To get/set powerhal state property
+set_prop(hal_power_dipper, vendor_power_prop)

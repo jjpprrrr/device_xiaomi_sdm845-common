@@ -6,3 +6,14 @@ type persist_file, file_type;
 type sysfs_graphics, sysfs_type, fs_type;
 type pps_socket, file_type;
 type sysfs_white_led, sysfs_type, fs_type;
+
+type sysfs_devfreq, sysfs_type, fs_type;
+type sysfs_kgsl, sysfs_type, fs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_system_sleep_stats, sysfs_type, fs_type;
+type sysfs_rpm, sysfs_type, fs_type;
+
+type debugfs_wlan, debugfs_type, fs_type;
+type debugfs_sched_features, debugfs_type, fs_type;
+
+type proc_sysctl_schedboost, proc_type, fs_type;
