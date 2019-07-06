@@ -22,6 +22,11 @@
 /system/bin/hw/lineage\.livedisplay@2\.0-service-sdm                   u:object_r:shal_livedisplay_default_exec:s0
 /system/bin/hw/lineage\.livedisplay@2\.0-service\.xiaomi_sdm845        u:object_r:shal_livedisplay_default_exec:s0
 
+# Media
+/system/etc/media_codecs.xml                u:object_r:vendor_configs_file:s0
+/system/etc/media_codecs_performance.xml    u:object_r:vendor_configs_file:s0
+/system/etc/media_profiles.xml              u:object_r:vendor_configs_file:s0
+
 # Power HAL
 /system/bin/hw/android\.hardware\.power@1\.3-service\.dipper-libperfmgr u:object_r:hal_power_dipper_exec:s0
 /dev/cpu_dma_latency                            u:object_r:device_latency:s0
