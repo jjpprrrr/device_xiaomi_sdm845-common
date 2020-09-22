@@ -177,6 +177,10 @@ PRODUCT_PACKAGES += \
     memtrack.sdm845 \
     vendor.qti.hardware.display.allocator@1.0-service
 
+# DPM
+PRODUCT_PACKAGES += \
+    libshim_dpmframework
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
