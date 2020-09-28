@@ -183,10 +183,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-service \
     android.hardware.drm@1.3-service.clearkey
 
-# Fingerprint
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/fingerprint/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm845.rc
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
@@ -339,7 +335,8 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/google/pixel
+    hardware/google/pixel \
+    hardware/xiaomi
 
 # Telephony
 # PRODUCT_PACKAGES += \
