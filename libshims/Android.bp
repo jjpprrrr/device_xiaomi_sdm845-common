@@ -1,0 +1,54 @@
+cc_library {
+    name: "libinput_shim",
+    srcs: [
+        "libinput_shim.cpp",
+    ],
+    shared_libs: [
+        "libinput",
+        "libutils",
+    ],
+
+    clang: true,
+}
+
+cc_library {
+    name: "libhwui_shim",
+    srcs: [
+        "libhwui_shim.cpp",
+    ],
+    include_dirs: [
+        "external/skia",
+    ],
+    shared_libs: [
+        "libhwui",
+        "libutils",
+    ],
+}
+
+cc_library {
+    name: "libgui_shim",
+    srcs: [
+        "libgui_shim.cpp",
+    ],
+    shared_libs: [
+        "libgui",
+        "libutils",
+    ],
+
+    clang: true,
+}
+
+cc_library {
+    name: "libaudioclient_shim",
+    srcs: [
+        "libaudioclient_shim.cpp",
+    ],
+    shared_libs: [
+        "libutils",
+    ],
+    include_dirs: [
+        "external/skia",
+    ],
+
+    clang: true,
+}

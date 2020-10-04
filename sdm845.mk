@@ -406,7 +406,11 @@ PRODUCT_COPY_FILES += \
 
 # WiFi Display
 PRODUCT_PACKAGES += \
-    libnl
+    libnl \
+    libinput_shim \
+    libhwui_shim \
+    libaudioclient_shim \
+    libgui_shim
 
 PRODUCT_BOOT_JARS += \
     WfdCommon
