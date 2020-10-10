@@ -409,8 +409,7 @@ PRODUCT_PACKAGES += \
     libnl \
     libinput_shim \
     libhwui_shim \
-    libaudioclient_shim \
-    libgui_shim
+    libaudioclient_shim
 
 PRODUCT_BOOT_JARS += \
     WfdCommon

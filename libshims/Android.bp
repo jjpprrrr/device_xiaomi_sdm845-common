@@ -26,19 +26,6 @@ cc_library {
 }
 
 cc_library {
-    name: "libgui_shim",
-    srcs: [
-        "libgui_shim.cpp",
-    ],
-    shared_libs: [
-        "libgui",
-        "libutils",
-    ],
-
-    clang: true,
-}
-
-cc_library {
     name: "libaudioclient_shim",
     srcs: [
         "libaudioclient_shim.cpp",
