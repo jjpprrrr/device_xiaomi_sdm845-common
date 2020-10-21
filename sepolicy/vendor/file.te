@@ -25,3 +25,5 @@ type blkio, file_type;
 
 type sysfs_scsi_clkgate, sysfs_type, fs_type;
 type sysfs_scsi_hibern8, sysfs_type, fs_type;
+
+type sysfs_earlywakeup, sysfs_type, fs_type;
