@@ -347,11 +347,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/qcom/opensource/commonsys/system/bt/conf
 
 # Telephony
-# PRODUCT_PACKAGES += \
-#     telephony-ext
+PRODUCT_PACKAGES += \
+    telephony-ext
 
-# PRODUCT_BOOT_JARS += \
-#     telephony-ext
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \
