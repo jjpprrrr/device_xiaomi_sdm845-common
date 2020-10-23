@@ -1,1 +1,2 @@
 allow sensors proc_tp:file r_file_perms;
+allow sensors system_prop:file r_file_perms;

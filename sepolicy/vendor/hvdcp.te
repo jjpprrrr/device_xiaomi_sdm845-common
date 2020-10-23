@@ -1,1 +1,2 @@
 r_dir_file(hvdcp, sysfs_batteryinfo)
+allow hvdcp system_prop:file r_file_perms;
