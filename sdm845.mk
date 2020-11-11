@@ -179,10 +179,6 @@ PRODUCT_PACKAGES += \
     memtrack.sdm845 \
     vendor.qti.hardware.display.allocator@1.0-service
 
-# DPM
-PRODUCT_PACKAGES += \
-    libshim_dpmframework
-
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
