@@ -404,6 +404,7 @@ system_ext/lib/lib-imsvtutils.so|6011e72eb3b33853a9c836ae70aa838f5c244723
 system_ext/lib/libdiag_system.so|e6fcc7554fc55aacd4df38ad5cc74e768894c021
 system_ext/lib/libimscamera_jni.so|cb608a18c83a1b87a263bdf06ed7fb7feb968c60
 system_ext/lib/libimsmedia_jni.so|910a70a8b8282d380ddd05a9178a4d0d07765f47
+system_ext/lib/vendor.qti.diaghal@1.0.so|6dbecf178c4ee24521d176b87b0b4e6799b7f846
 system_ext/lib/vendor.qti.hardware.radio.ims@1.0.so|c9c37f3daacf614886ff366085166467cbe74b84
 system_ext/lib/vendor.qti.hardware.radio.ims@1.1.so|6aa1c7019f03af4a7d6a3a405c2168dd05939245
 system_ext/lib/vendor.qti.hardware.radio.ims@1.2.so|25008703ac5125b3f32d30aea3f29d28cb01a4c4
@@ -436,6 +437,7 @@ system_ext/lib64/lib-imsvtutils.so|3c3fde8c94173e680398cef466d5c7d19ad637ca
 system_ext/lib64/libdiag_system.so|3543c0dfb74f4a2054484d8d98ee8b25092417ad
 system_ext/lib64/libimscamera_jni.so|e1f3415ef21497f5bb551b846e7f92297bdd3156
 system_ext/lib64/libimsmedia_jni.so|ad16488a887c84de26d73e3eb529865b3f6ff4ee
+system_ext/lib64/vendor.qti.diaghal@1.0.so|d5a0fb4f332a3b6400bb91961d980b436023b1d9
 system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so|b9a22bce42cd1128afcadd2dbe38f862e451d458
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so|6e80ff39dab40aedb897c2ec0c26c34d3344e037
 system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so|b9a312ffa2a0db117541566f5e54983ac2a9f7e9
